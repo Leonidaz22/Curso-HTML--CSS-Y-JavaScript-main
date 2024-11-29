@@ -1,0 +1,89 @@
+/* Aplicar una fuente moderna a todo el proyecto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de la página */
+body {
+    background-color: #f0f8ff; /* Color azul claro */
+    color: #333; /* Texto en gris oscuro */
+}
+
+/* Contenedor principal */
+.block {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;    /* Centrar verticalmente */
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding: 20px;
+    background-image: url('https://via.placeholder.com/1920x1080'); /* Imagen de fondo */
+    background-size: cover; /* Cubrir toda el área */
+    background-attachment: fixed; /* Fondo fijo */
+    background-position: center;
+    color: rgb(255, 255, 255); /* Texto claro sobre fondo oscuro */
+}
+
+/* Contenedor flex */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta los elementos en filas */
+    gap: 15px; /* Espaciado entre elementos */
+    max-width: 90%;
+    justify-content: center; /* Centra los elementos */
+}
+
+/* Elementos individuales */
+.flex-item {
+    background-color: #054f8b; /* Azul intenso */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    flex: 1 1 calc(33.333% - 30px); /* Toma un tercio del ancho */
+    max-width: calc(33.333% - 30px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra elegante */
+    font-size: 1.2rem;
+    transition: all 0.3s ease; /* Animación suave */
+}
+
+/* Hover de elementos */
+.flex-item:hover {
+    background-color: #005a9e; /* Azul más oscuro */
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Estilos para hipervínculos */
+a {
+    color: #0078D7; /* Azul */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: 600; /* Negrita */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #005a9e; /* Azul oscuro al pasar el cursor */
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+a:visited {
+    color: #551A8B; /* Púrpura para enlaces visitados */
+}
+
+/* Imagen estilizada */
+img {
+    max-width: 100%;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease; /* Zoom suave */
+}
+
+img:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
